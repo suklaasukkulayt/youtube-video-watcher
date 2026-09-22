@@ -10,7 +10,7 @@ body {
     background-color: azure;
 }
 
-h1, label, input, button {
+h1, label, input, button, p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
