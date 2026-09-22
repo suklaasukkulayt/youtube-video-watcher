@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+}
+
+#ytplayer {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: azure;
+}
+
+h1, label, input, button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
