@@ -10,11 +10,15 @@ body {
     background-color: azure;
 }
 
-h1, label, input, button, p {
+h1, p, label, input, button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 button {
     background-color: azure;
     border-radius: 3px;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
