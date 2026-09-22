@@ -19,6 +19,14 @@ button {
     border-radius: 3px;
 }
 
+label {
+    background-color: azure;
+}
+
+input {
+    background-color: azure;
+}
+
 .text {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
