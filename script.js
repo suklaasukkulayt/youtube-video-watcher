@@ -1,5 +1,10 @@
 const params = new URLSearchParams(window.location.search);
 const videoId = params.get("v");
+if (videoId != null){
+        document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1";
+} else {
+    return;
+}
 
 function showInfo(){
     const infoDiv = document.getElementById("info");
@@ -27,10 +32,8 @@ youtubeVideoIdForm.addEventListener('submit', function(event) {
         videoid = match[3]; 
     }
 
-    if (videoId != null){
-        document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1";
-    }
-else if (videoid != null) {
+    
+if (videoid != null) {
     document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoid + "?autoplay=1";
 } else {
     document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoIdValue + "?autoplay=1";
