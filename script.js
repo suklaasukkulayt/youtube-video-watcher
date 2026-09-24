@@ -2,8 +2,6 @@ const params = new URLSearchParams(window.location.search);
 const videoId = params.get("v");
 if (videoId != null){
         document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1";
-} else {
-    return;
 }
 
 function showInfo(){
