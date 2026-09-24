@@ -31,5 +31,5 @@ if (videoid != null) {
 }
 })
 
-var a = window.location.href; 
+var a = window.location.pathname; 
 alert(a.split('/')[1]);
