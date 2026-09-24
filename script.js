@@ -33,4 +33,9 @@ if (videoid != null) {
 
 const params = new URLSearchParams(window.location.search);
 const videoId = params.get("v");
-alert(videoId);
+
+if (videoId) {
+  alert(videoId);
+} else {
+  alert("No v param. URL is: " + window.location.href);
+}
