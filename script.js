@@ -1,7 +1,19 @@
 const params = new URLSearchParams(window.location.search);
 const videoId = params.get("v");
+
 if (videoId != null){
+  let VIDEOID = videoId;
+    let regex = /(youtu.*be.*)\/(watch\?v=|embed\/|v|shorts|)(.*?((?=[?])|$))/gm;
+    let VideoID = "undefined";
+    const matche = regex.exec(VIDEOID);
+
+    if (matche === null){
         document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1";
+        } else{
+        VideoID = matche[3]; 
+        document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + VideoID + "?autoplay=1";
+
+    }
 }
 
 function showInfo(){
