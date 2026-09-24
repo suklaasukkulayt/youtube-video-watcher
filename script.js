@@ -31,5 +31,6 @@ if (videoid != null) {
 }
 })
 
-var a = window.location.pathname; 
-alert(a.split('/')[1]);
+const params = new URLSearchParams(window.location.search);
+const videoId = params.get("v");
+alert(videoId);
