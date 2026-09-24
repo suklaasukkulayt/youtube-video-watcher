@@ -30,3 +30,6 @@ if (videoid != null) {
     document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoIdValue + "?autoplay=1";
 }
 })
+
+var a = window.location.href; 
+alert(a.split('/')[1]);
