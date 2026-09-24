@@ -1,3 +1,6 @@
+const params = new URLSearchParams(window.location.search);
+const videoId = params.get("v");
+
 function showInfo(){
     const infoDiv = document.getElementById("info");
     if (infoDiv.style.display === "none"){
@@ -24,18 +27,12 @@ youtubeVideoIdForm.addEventListener('submit', function(event) {
         videoid = match[3]; 
     }
 
-if (videoid != null) {
+    if (videoId != null){
+        document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoId + "?autoplay=1";
+    }
+else if (videoid != null) {
     document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoid + "?autoplay=1";
 } else {
     document.getElementById("youtubeplayer").src = "https://www.youtube-nocookie.com/embed/" + videoIdValue + "?autoplay=1";
 }
 })
-
-const params = new URLSearchParams(window.location.search);
-const videoId = params.get("v");
-
-if (videoId) {
-  alert(videoId);
-} else {
-  alert("No v param. URL is: " + window.location.href);
-}
